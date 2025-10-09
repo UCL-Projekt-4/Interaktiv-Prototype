@@ -12,12 +12,20 @@
   </head>
   <body>
     <header class="header">
-      <div class="header__top-bar header__top-bar--no-nav">
+      <div class="header__top-bar">
         <img src="img/logoBig.svg" alt="Go to homepage" class="header__logo" />
         <button class="header__icon-btn">
           <img src="img/icons/iconLogin.svg" alt="Login button" />
         </button>
       </div>
+      <nav class="header__wardrobe-nav">
+        <button class="header__btn header__wardrobe-btn header__btn--selected">
+          <span>Klædeskab</span>
+        </button>
+        <button class="header__btn header__wardrobe-btn header__btn--border-left">
+          <span>Outfits</span>
+        </button>
+      </nav>
     </header>
     <main class="main"></main>
     <footer>
@@ -40,9 +48,7 @@
 
           <span class="footer__tab-label">Hjem</span>
         </a>
-        <a
-          href="#discover"
-          class="footer__tab-bar-item footer__tab-bar-item--selected">
+        <a href="#explore" class="footer__tab-bar-item">
           <svg
             class="footer__icon"
             alt="Gå til udforsk siden"
@@ -57,7 +63,9 @@
 
           <span class="footer__tab-label">Udforsk</span>
         </a>
-        <a href="#wardrobe" class="footer__tab-bar-item">
+        <a
+          href="#wardrobe"
+          class="footer__tab-bar-item footer__tab-bar-item--selected">
           <svg
             class="footer__icon"
             alt="Gå til klædeskab siden"

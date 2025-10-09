@@ -12,12 +12,23 @@
   </head>
   <body>
     <header class="header">
-      <div class="header__top-bar header__top-bar--no-nav">
+      <div class="header__top-bar">
         <img src="img/logoBig.svg" alt="Go to homepage" class="header__logo" />
         <button class="header__icon-btn">
           <img src="img/icons/iconLogin.svg" alt="Login button" />
         </button>
       </div>
+      <nav class="header__gender-nav">
+        <button class="header__btn header__gender-btn header__btn--selected">
+          <span>Kvinder</span>
+        </button>
+        <button class="header__btn header__gender-btn header__btn--border-left">
+          <span>Mænd</span>
+        </button>
+        <button class="header__btn header__gender-btn header__btn--border-left">
+          <span>Alle</span>
+        </button>
+      </nav>
     </header>
     <main class="main"></main>
     <footer>
@@ -41,7 +52,7 @@
           <span class="footer__tab-label">Hjem</span>
         </a>
         <a
-          href="#discover"
+          href="#explore"
           class="footer__tab-bar-item footer__tab-bar-item--selected">
           <svg
             class="footer__icon"

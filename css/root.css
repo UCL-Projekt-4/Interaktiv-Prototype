@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* All design tokens in one :root */
+:root {
+  /* Primary Colors */
+  --primary: #284b96;
+  --secondary: #3da1e8;
+  --tertiary: #b6ac8f;
+  --black: #000000;
+  --white: #ffffff;
+  --light-gray: #e3e3e3e3;
+  --dark-gray: #717171;
+
+  /* Fill Colors */
+  --fill-primary: var(--primary);
+  --fill-secondary: var(--secondary);
+  --fill-tertiary: var(--tertiary);
+  --fill-gray: var(--light-gray);
+  --fill-white: var(--white);
+  --fill-subtle: rgba(40, 75, 150, 0.1);
+  --fill-black: var(--black);
+
+  /* Stroke Colors */
+  --stroke-primary: var(--primary);
+  --stroke-secondary: var(--secondary);
+  --stroke-tertiary: var(--tertiary);
+  --stroke-light-gray: var(--light-gray);
+  --stroke-dark-gray: var(--dark-gray);
+
+  /* Text Colors */
+  --text-primary: var(--black);
+  --text-brand: var(--primary);
+  --text-invers-primary: var(--white);
+  --text-secondary: #8e8e8e;
+  --text-light-gray: var(--light-gray);
+
+  /* Spacing */
+  --spacing-3xs: 2px;
+  --spacing-2xs: 4px;
+  --spacing-xs: 8px;
+  --spacing-s: 12px;
+  --spacing-m: 16px;
+  --spacing-l: 20px;
+  --spacing-xl: 24px;
+  --spacing-2xl: 32px;
+  --spacing-3xl: 40px;
+  --spacing-4xl: 48px;
+  --spacing-5xl: 56px;
+  --spacing-no-spacing: 0px;
+
+  /* Radius */
+  --radius-none: 0px;
+  --radius-2xs: 2px;
+  --radius-xs: 4px;
+  --radius-s: 6px;
+  --radius-m: 8px;
+  --radius-l: 10px;
+  --radius-xl: 12px;
+  --radius-2xl: 16px;
+  --radius-full: 999px;
+
+  /* Stroke Widths */
+  --stroke-s: 1px;
+  --stroke-m: 2px;
+  --stroke-l: 4px;
+  --stroke-xl: 6px;
+
+  --text-body-small-size: 0.812rem; /* 13px */
+  --text-body-small-line-height: 21px;
+  --text-body-x-small-size: 0.688rem; /* 11px */
+  --text-body-x-small-line-height: 18px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Arial, sans-serif";
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Roboto";
+  font-weight: 700;
+}
+
+html {
+  font-size: 100%;
+} /* 16px */
+
+h1 {
+  font-size: 3rem; /* 48px */
+  line-height: 69px;
+}
+
+h2 {
+  font-size: 2.5rem; /* 40px */
+  line-height: 57px;
+}
+
+h3 {
+  font-size: 2.062rem; /* 33px */
+  line-height: 48px;
+}
+
+h4 {
+  font-size: 1.75rem; /* 28px */
+  line-height: 39px;
+}
+
+h5 {
+  font-size: 1.438rem; /* 23px */
+  line-height: 33px;
+}
+
+.text-body-large {
+  font-size: 1.188rem; /* 19px */
+  line-height: 27px;
+  font-style: italic;
+}
+
+.text-body-medium {
+  font-size: 1rem; /* 16px */
+  line-height: 24px;
+}
+
+.text-body-small {
+  font-size: 0.812rem; /* 13px */
+  line-height: 21px;
+}
+
+.text-body-x-small {
+  font-size: 0.688rem; /* 11px */
+  line-height: 18px;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  background: none;
+  border: none;
+}
