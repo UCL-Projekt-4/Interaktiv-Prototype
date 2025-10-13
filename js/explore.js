@@ -1,3 +1,5 @@
+// Cecilie
+
 const mainCategories = [
   // Array, der laver hovedkategorierne
   {
