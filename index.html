@@ -7,6 +7,7 @@
 		<link rel="stylesheet" href="css/root.css" />
 		<link rel="stylesheet" href="css/style.css" />
 		<script src="js/script.js"></script>
+		<script src="js/login.js" defer></script>
 
 		<title>Det Blå Klædeskab</title>
 	</head>
@@ -125,5 +126,32 @@
 				</a>
 			</nav>
 		</footer>
+		<!-- Login Modal (Jose) -->
+		<div class="login-modal" id="loginModal">
+			<div class="login-modal__content">
+				<button class="login-modal__close">✕</button>
+				<h2 class="login-modal__title">Log ind</h2>
+
+				<form class="login-modal__form" id="loginForm">
+					<label for="email" class="login-modal__label">E-mail</label>
+					<input
+						type="email"
+						id="email"
+						class="login-modal__input"
+						required
+						placeholder="E-mail" />
+
+					<label for="password" class="login-modal__label">Adgangskode:</label>
+					<input
+						type="password"
+						id="password"
+						class="login-modal__input"
+						required
+						placeholder="Adgangskode" />
+
+					<button type="submit" class="login-form__submit">Log ind</button>
+				</form>
+			</div>
+		</div>
 	</body>
 </html>
