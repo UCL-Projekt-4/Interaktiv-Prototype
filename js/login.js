@@ -5,7 +5,7 @@
 
 // ------ Henter elementer fra DOM'en ------ //
 // Jeg gemmer elementer fra HTML’en i variabler, så jeg nemt kan arbejde med dem i JavaScript.
-const loginBtn = document.querySelecto(".header__icon-btn"); // Hent login-knap
+const loginBtn = document.querySelector(".header__icon-btn"); // Hent login-knap
 const loginModal = document.getElementById("loginModal"); // Hent modal
 const closeBtn = document.querySelector(".login-modal__close"); // Hent luk-knap
 const loginForm = document.getElementById("loginForm"); // Hent login-formular
