@@ -1,5 +1,7 @@
 // Cecilie
 
+import products from "./data.js";
+
 const mainCategories = [
   // Array, der laver hovedkategorierne
   {
