@@ -14,7 +14,7 @@ const loginForm = document.getElementById("loginForm"); // Hent login-formular
 // Hvert element i arrayet er et objekt, der samler en email med den tilhørende adgangskode.
 // Dette bruges senere til at tjekke login.
 const users = [
-	{ email: "blåkors@ucl.dk", password: "halløj" },
+	{ email: "hey@ucl.dk", password: "goddag" },
 	{ email: "genbrug@ucl.dk", password: "detteerbareenkode" },
 ];
 
