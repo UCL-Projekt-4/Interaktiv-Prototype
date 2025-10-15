@@ -164,6 +164,8 @@ footer {
 }
 
 .login-modal__content {
+	font-family: "Roboto", Arial, sans-serif; /* Brug Roboto + backups */
+	font-weight: 400; /* Standardvægt for tekst */
 	background: var(--fill-white);
 	padding: var(--spacing-l);
 	border-radius: var(--radius-m);
@@ -179,6 +181,9 @@ footer {
 }
 
 .login-modal__input {
+	font-family: "Roboto", Arial, sans-serif; /* Brug Roboto + backups */
+	font-weight: 400;
+	font-size: 1rem; /* 16px, så det matcher body-tekst */
 	width: 100%; /* Inputfelter fylder hele bredden af modalboksen */
 	padding: var(--spacing-s);
 	margin-bottom: var(--spacing-m);
@@ -187,6 +192,9 @@ footer {
 }
 
 .login-modal__submit {
+	font-family: "Roboto", Arial, sans-serif; /* Brug Roboto + backups */
+	font-weight: 500; /* lidt mere fremtrædende */
+	font-size: 1rem;
 	width: 100%; /* Knap fylder hele bredden af modalboksen */
 	padding: var(--spacing-s);
 	background-color: var(--primary);
