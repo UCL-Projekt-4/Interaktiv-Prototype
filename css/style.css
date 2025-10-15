@@ -171,6 +171,7 @@ footer {
 	border-radius: var(--radius-m);
 	width: 90%; /* Fylder 90% af skærmbredden... */
 	max-width: 400px; /* ...men maks 400px */
+	position: relative; /* For at placere luk-knappen absolut inden for denne boks */
 }
 
 .login-modal__close {
@@ -178,6 +179,13 @@ footer {
 	top: 10px;
 	right: 10px;
 	font-size: 1.5rem;
+	color: var(--stroke-light-gray);
+	cursor: pointer;
+	transition: color 0.2s ease; /* glidende farveændring */
+}
+
+.login-modal__close:hover {
+	color: var(--primary); /* farveændring ved hover */
 }
 
 .login-modal__input {
@@ -202,6 +210,12 @@ footer {
 	border: none; /* Fjerner standardrammen på knappen */
 	border-radius: var(--radius-s);
 	cursor: pointer; /* Ændrer cursor til pointer ved hover */
+	transition: background-color 0.2s ease, transform 0.1s ease; /* glidende ændring */
+}
+
+.login-modal__submit:hover {
+	background-color: #1f3b76; /* Mørkere blå end --primary. Taget fra designsystem */
+	transition: background-color 0.2s ease;
 }
 
 /*
