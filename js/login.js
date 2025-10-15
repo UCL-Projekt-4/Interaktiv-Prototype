@@ -23,7 +23,7 @@ const users = [
 function openModal() {
 	loginModal.classList.add("open"); // Tilføj 'open' klasse for at vise modal
 	document.body.style.overflow = "hidden"; // Forhindr baggrund i at scrolle
-} // Close the login function
+}
 
 function closeModal() {
 	loginModal.classList.remove("open"); // Fjern 'open' klasse for at skjule modal
