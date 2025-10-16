@@ -23,6 +23,7 @@ const users = [
 function openModal() {
 	loginModal.classList.add("open"); // Tilføj 'open' klasse for at vise modal
 	document.body.style.overflow = "hidden"; // Forhindr baggrund i at scrolle
+	document.getElementById("email").focus(); // Sæt fokus på email-feltet, når modalen åbnes
 }
 
 function closeModal() {
