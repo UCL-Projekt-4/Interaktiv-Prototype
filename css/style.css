@@ -174,7 +174,7 @@ footer {
 	position: relative; /* For at placere luk-knappen absolut inden for denne boks */
 }
 
-.login-modal__close {
+.login-modal__close-img {
 	position: absolute; /* Fastsiddende position (øverst i hjørnet) */
 	top: 10px;
 	right: 10px;
@@ -184,7 +184,7 @@ footer {
 	transition: color 0.2s ease; /* glidende farveændring */
 }
 
-.login-modal__close:hover {
+.login-modal__close-img:hover {
 	color: var(--stroke-light-gray); /* farveændring ved hover */
 }
 
