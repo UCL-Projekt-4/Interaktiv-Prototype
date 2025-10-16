@@ -218,6 +218,45 @@ footer {
 	transition: background-color 0.2s ease;
 }
 
+.login-modal__remember {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	margin-bottom: var(--spacing-m);
+}
+
+.login-modal__checkbox {
+	width: 18px;
+	height: 18px;
+	cursor: pointer;
+	accent-color: var(--primary);
+}
+
+.login-modal__label--inline {
+	font-family: "Roboto", Arial, sans-serif; /* Samme font som resten */
+	font-weight: 400; /* Samme vægt som input og labels */
+	font-size: 0.95rem;
+	color: var(--text-primary);
+	cursor: pointer;
+}
+
+.login-modal__forgot-password {
+	font-family: "Roboto", Arial, sans-serif; /* Samme font som resten */
+	text-align: center;
+	font-weight: 500;
+	font-size: 0.95rem;
+	color: var(--black);
+	text-decoration: underline; /* Tykkere streg */
+	text-underline-offset: 3px; /* Lidt afstand mellem tekst og streg */
+	cursor: pointer;
+	margin-top: var(--spacing-m);
+	transition: color 0.2s ease; /* Glidende farveskift */
+}
+
+.login-modal__forgot-password:hover {
+	color: var(--stroke-light-gray); /* Ændres til grå ved hover */
+}
+
 /*
 Hvis vi skal bruge pile:
 .arrow {

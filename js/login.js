@@ -9,6 +9,7 @@ const loginBtn = document.querySelector(".header__icon-btn"); // Hent login-knap
 const loginModal = document.getElementById("loginModal"); // Hent modal
 const closeBtn = document.querySelector(".login-modal__close"); // Hent luk-knap
 const loginForm = document.getElementById("loginForm"); // Hent login-formular
+const rememberCheckbox = document.getElementById("remember"); // Hent "Husk mig" checkbox
 
 // --- Liste over brugere med deres email og password. ---//
 // Hvert element i arrayet er et objekt, der samler en email med den tilhørende adgangskode.
@@ -24,6 +25,12 @@ function openModal() {
 	loginModal.classList.add("open"); // Tilføj 'open' klasse for at vise modal
 	document.body.style.overflow = "hidden"; // Forhindr baggrund i at scrolle
 	document.getElementById("email").focus(); // Sæt fokus på email-feltet, når modalen åbnes
+
+	const savedEmail = localStorage.getItem("rememberedEmail"); // Hent gemt email
+	if (savedEmail) {
+		document.getElementById("email").value = savedEmail; // Sæt email-feltet til den gemte email
+		rememberCheckbox.checked = true; // Sæt checkbox til at være markeret
+	}
 }
 
 function closeModal() {
@@ -53,6 +60,12 @@ function login(event) {
 
 	// Hvis login er korrekt, luk modalen og vis en velkomstbesked.
 	if (isValid) {
+		if (rememberCheckbox.checked) {
+			localStorage.setItem("rememberedEmail", email);
+		} else {
+			localStorage.removeItem("rememberedEmail");
+		}
+
 		closeModal(); // Luk modalen.
 		alert("Velkommen!"); // Vis velkomstbesked.
 		loginForm.reset(); // Nulstil formularen.
