@@ -179,13 +179,13 @@ footer {
 	top: 10px;
 	right: 10px;
 	font-size: 1.5rem;
-	color: var(--stroke-light-gray);
+	color: var(--primary);
 	cursor: pointer;
 	transition: color 0.2s ease; /* glidende farveændring */
 }
 
 .login-modal__close:hover {
-	color: var(--primary); /* farveændring ved hover */
+	color: var(--stroke-light-gray); /* farveændring ved hover */
 }
 
 .login-modal__input {
