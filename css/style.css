@@ -144,6 +144,49 @@ footer {
   color: var(--secondary);
 }
 
+/******** Wardrobe *******/
+.main__clothing-wrapper {
+  margin-top: var(--spacing-s);
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-xs);
+  justify-content: center;
+  align-self: stretch;
+}
+
+.main__clothing-item {
+  display: flex;
+  position: relative;
+  width: 150px;
+  height: 150px;
+  aspect-ratio: 1/1;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--stroke-light-gray);
+}
+
+.main__clothing-item img {
+  width: 100%;
+  flex-shrink: 0;
+  align-self: center;
+}
+
+.main__heart-icon {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 32px;
+  height: 32px;
+  fill: none;
+
+  cursor: pointer;
+}
+
+.main__heart-icon--liked path {
+  stroke: red;
+  fill: red;
+}
+
 /*
 Hvis vi skal bruge pile:
 .arrow {

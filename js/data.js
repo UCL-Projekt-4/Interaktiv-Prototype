@@ -56,3 +56,5 @@ const products = [
     image: "#",
   }, // image skal være "img/billedenavn"
 ];
+
+export default products;
