@@ -214,7 +214,7 @@ footer {
 }
 
 .login-modal__submit:hover {
-	background-color: #1f3b76; /* Mørkere blå end --primary. Taget fra designsystem */
+	background-color: var(--secondary); /* Taget fra designsystem */
 	transition: background-color 0.2s ease;
 }
 
