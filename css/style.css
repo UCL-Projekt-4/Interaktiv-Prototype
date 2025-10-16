@@ -257,6 +257,16 @@ footer {
 	color: var(--stroke-light-gray); /* Ændres til grå ved hover */
 }
 
+input:invalid:not(:placeholder-shown) {
+	outline: 2px solid var(--error);
+	outline-offset: -2px;
+}
+
+input:focus {
+	outline: 2px solid var(--primary);
+	outline-offset: -2px;
+}
+
 /*
 Hvis vi skal bruge pile:
 .arrow {
