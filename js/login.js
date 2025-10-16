@@ -29,6 +29,7 @@ function openModal() {
 function closeModal() {
 	loginModal.classList.remove("open"); // Fjern 'open' klasse for at skjule modal
 	document.body.style.overflow = "auto"; // Tillad baggrund at scrolle igen
+	loginBtn.focus(); // Sæt fokus tilbage på login-knappen, når modalen lukkes
 }
 
 // ----------- Funktion til login ----------- //
