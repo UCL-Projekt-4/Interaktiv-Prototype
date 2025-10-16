@@ -172,14 +172,6 @@ footer {
 	width: 90%; /* Fylder 90% af skærmbredden... */
 	max-width: 400px; /* ...men maks 400px */
 	position: relative; /* For at placere luk-knappen absolut inden for denne boks */
-	transform: translateY(-20px);
-	opacity: 0;
-	transition: transform 0.3s ease, opacity 0.3s ease;
-}
-
-.login-modal.open .login-modal__content {
-	transform: translateY(0);
-	opacity: 1;
 }
 
 .login-modal__close {
