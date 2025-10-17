@@ -56,7 +56,6 @@ function login(event) {
 		closeModal(); // Luk modalen.
 		alert("Velkommen!"); // Vis velkomstbesked.
 		loginForm.reset(); // Nulstil formularen.
-
 		// Hvis login ikke er korrekt, vis en fejlbesked.
 	} else {
 		alert("Forkert email eller password. Prøv igen."); // Vis fejlbesked.
