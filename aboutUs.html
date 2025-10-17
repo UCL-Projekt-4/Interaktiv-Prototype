@@ -6,8 +6,10 @@
 
     <link rel="stylesheet" href="css/root.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <script src="js/script.js"></script>
-
+    <script src="js/aboutUs.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/f099f94339.js"
+      crossorigin="anonymous"></script>
     <title>Det Blå Klædeskab</title>
   </head>
   <body>
@@ -21,7 +23,7 @@
         </button>
       </div>
     </header>
-    <main>
+    <main class="main-content main-content--about-us">
       <h1>Om Blå Kors Danmark</h1>
       <p>
         Blå Kors Danmark er en social og diakonal organisation, der hver dag
@@ -43,11 +45,56 @@
         forandre.
       </p>
 
-      <h2>Alkohol</h2>
-      <h2>Hjemløshed</h2>
-      <h2>Stoffer</h2>
-      <h2>Fattigdom</h2>
-      <h2>Udsatte børn og unge</h2>
+      <!-- Accordion sektion for Alkohol -->
+      <div class="accordion" id="alcoholAccordion">
+        <h2 class="accordion__header">
+          <i class="fas fa-chevron-down"></i> Alkohol
+        </h2>
+      </div>
+
+      <!-- Accordion sektion for Hjemløshed -->
+      <div class="accordion">
+        <h2 class="accordion__header">
+          <i class="fas fa-chevron-down"></i>
+          Hjemløshed
+        </h2>
+        <div class="accordion__content">
+          <!-- Indhold til hjemløshed kommer her -->
+        </div>
+      </div>
+
+      <!-- Accordion sektion for Stoffer -->
+      <div class="accordion">
+        <h2 class="accordion__header">
+          <i class="fas fa-chevron-down"></i>
+          Stoffer
+        </h2>
+        <div class="accordion__content">
+          <!-- Indhold til stoffer kommer her -->
+        </div>
+      </div>
+
+      <!-- Accordion sektion for Fattigdom -->
+      <div class="accordion">
+        <h2 class="accordion__header">
+          <i class="fas fa-chevron-down"></i>
+          Fattigdom
+        </h2>
+        <div class="accordion__content">
+          <!-- Indhold til fattigdom kommer her -->
+        </div>
+      </div>
+
+      <!-- Accordion sektion for Udsatte børn og unge -->
+      <div class="accordion">
+        <h2 class="accordion__header">
+          <i class="fas fa-chevron-down"></i>
+          Udsatte børn og unge
+        </h2>
+        <div class="accordion__content">
+          <!-- Indhold til udsatte børn og unge kommer her -->
+        </div>
+      </div>
     </main>
     <footer>
       <nav

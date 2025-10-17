@@ -1,12 +1,6 @@
 // Tiffany
 // Wardrobe side - viser kun likede produkter
 
-/* TODO Overall
- * TODO: Lav hjerterne funktionelle, samt at de bliver tilføjet til en liste som klædeskabet benytter
- *  Lav klædeskabet til at benytte en liste af likede ting
- *  Lav i outfits til at kun bruge det der ligger i klædeskab
- */
-
 // Importer funktioner fra likeItems.js modulet
 import {
   createClothingItem, // Opretter HTML element for et tøjstykke med hjerte-ikon

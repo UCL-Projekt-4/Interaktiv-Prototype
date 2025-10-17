@@ -145,6 +145,7 @@ footer {
 }
 
 /******** Wardrobe *******/
+
 .main__clothing-wrapper {
   margin-top: var(--spacing-s);
   display: flex;
@@ -188,6 +189,7 @@ footer {
 }
 
 /******** Outfit View *******/
+
 .main__outfit-wrapper {
   display: none;
   justify-content: center;
@@ -319,4 +321,32 @@ footer {
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 4px;
   max-width: 150px;
+}
+
+/******** About us *******/
+
+.main-content--about-us {
+  background-color: var(--primary);
+  color: var(--text-invers-primary);
+  height: 100%;
+}
+
+.accordion__list {
+  padding-left: 24px;
+  list-style-position: inside;
+}
+
+.accordion__content {
+  padding-left: 40px;
+}
+
+.accordion__content p {
+  margin-bottom: 0;
+}
+
+.accordion__header i {
+  scale: 0.5;
+}
+.accordion__header {
+  cursor: pointer;
 }
