@@ -40,8 +40,8 @@ function createArrow(direction) {
   // Tilføj SVG ikon afhængigt af retning (venstre eller højre)
   arrow.innerHTML = `
     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M${
-        direction === "left" ? "15 18L9 12L15 6" : "9 6L15 12L9 18"
+      <path d="M${ 
+        direction === "left" ? "15 18L9 12L15 6" : "9 6L15 12L9 18" // En forkortet måde at lave en if statement på. Her er det hvis den er left så bruger den det efterfølgende path data, hvis ikke så bruger den det andet
       }" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
     </svg>
   `;
