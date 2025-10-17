@@ -1,58 +1,111 @@
-const products = [
+const shirtsCardigangs = [
   {
     id: 1,
-    category: "Overdel",
-    underCategory: "T-shirt",
-    description: "Basic T-shirt",
-    color: "Sort",
-    image: "#",
-  }, // image skal være "img/billedenavn"
+    name: "grøn trøje",
+    img: "img/trøje.png",
+  },
+];
+
+const tshirtsAndTops = [
+  {
+    id: 1,
+    name: "Sort T-shirt",
+    img: "img/TikTok placeholder.png",
+  },
+];
+
+const shirts = [
+  {
+    id: 1,
+    name: "Pink skjorte",
+    img: "img/shirt.png",
+  },
+];
+
+const blouses = [];
+
+const hoodiesAndSweatshirts = [];
+
+export const categories = [
+  {
+    id: 1,
+    category: "Alle Overdele",
+    subCategories: [
+      {
+        id: 1,
+        name: "Vis alt",
+        products: [
+          ...tshirtsAndTops,
+          ...shirtsCardigangs,
+          ...shirts,
+          ...blouses,
+          ...hoodiesAndSweatshirts,
+        ],
+      },
+      {
+        id: 2,
+        name: "T-shirts og toppe",
+        products: tshirtsAndTops,
+      },
+      {
+        id: 3,
+        name: "Trøjer og cardigans",
+        products: shirtsCardigangs,
+      },
+      {
+        id: 4,
+        name: "Skjorter",
+        products: shirts,
+      },
+      {
+        id: 5,
+        name: "Bluser",
+        products: blouses,
+      },
+      {
+        id: 6,
+        name: "Hættetrøjer og sweatshirts",
+        products: hoodiesAndSweatshirts,
+      },
+    ],
+    description: "Alle overdeles produkter",
+  },
   {
     id: 2,
-    category: "Underdel",
-    underCategory: "Bukser",
-    description: "Basic Bukser",
-    color: "Blå",
-    image: "#",
-  }, // image skal være "img/billedenavn"
+    category: "Alle Underdele",
+    subCategories: [],
+    description: "Alle underdeles produkter",
+  },
   {
     id: 3,
-    category: "Sko",
-    underCategory: "Sneakers",
-    description: "Basic Sneakers",
-    color: "Sort",
-    image: "#",
-  }, // image skal være "img/billedenavn"
+    category: "Træningstøj",
+    subCategories: [],
+    description: "Alle træningstøjs produkter",
+  },
   {
     id: 4,
-    category: "Overdel",
-    underCategory: "Bluse",
-    description: "Basic Bluse",
-    color: "Sort",
-    image: "#",
-  }, // image skal være "img/billedenavn"
+    category: "Jakker og Frakker",
+    subCategories: [],
+    description: "Alle jakker og frakkers produkter",
+  },
   {
     id: 5,
-    category: "Underdel",
-    underCategory: "Shorts",
-    description: "Basic Shorts",
-    color: "Sort",
-    image: "#",
-  }, // image skal være "img/billedenavn"
+    category: "Kjoler",
+    subCategories: [],
+    description: "Alle kjolers produkter",
+  },
   {
     id: 6,
-    category: "Underdel",
-    underCategory: "Nederdel",
-    description: "Basic Nederdel",
-    color: "Sort",
-    image: "#",
-  }, // image skal være "img/billedenavn"
+    category: "Playsuits og Jumpsuits",
+    subCategories: [],
+    description: "Alle playsuits og jumpsuits produkter",
+  },
   {
     id: 7,
-    category: "Overdel",
-    underCategory: "T-shirt",
-    description: "Basic T-shirt",
-    color: "Hvid",
-    image: "#",
-  }, // image skal være "img/billedenavn"
+    category: "Sko",
+    subCategories: [],
+    description: "Alle skos produkter",
+  },
 ];
+
+export default categories;
