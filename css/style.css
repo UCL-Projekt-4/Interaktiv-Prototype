@@ -145,7 +145,8 @@ footer {
 }
 
 /******** Wardrobe *******/
-#product-wrapper {
+#product-wrapper,
+.main__product-wrapper {
   margin-top: var(--spacing-s);
   display: flex;
   flex-wrap: wrap;
@@ -222,7 +223,7 @@ footer {
   z-index: 2;
 }
 
-.outfit__clothing-slot--overdel {
+.outfit__clothing-slot--overdele {
   top: 20%;
   left: 50%;
   transform: translateX(-50%);
@@ -230,7 +231,7 @@ footer {
   height: 180px;
 }
 
-.outfit__clothing-slot--underdel {
+.outfit__clothing-slot--underdele {
   top: 50%;
   left: 50%;
   transform: translateX(-50%);
