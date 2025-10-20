@@ -4,9 +4,12 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-		<link rel="stylesheet" href="css/root.css" />
-		<link rel="stylesheet" href="css/style.css" />
-		<script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/root.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/aboutUs.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/f099f94339.js"
+      crossorigin="anonymous"></script>
 		<script src="js/login.js" defer></script>
 
 		<title>Det Blå Klædeskab</title>
@@ -44,29 +47,74 @@
 				forandre.
 			</p>
 
-			<h2>Alkohol</h2>
-			<h2>Hjemløshed</h2>
-			<h2>Stoffer</h2>
-			<h2>Fattigdom</h2>
-			<h2>Udsatte børn og unge</h2>
-		</main>
-		<footer>
-			<nav
-				class="footer__tab-bar"
-				role="navigation"
-				aria-label="Main navigation">
-				<a href="index.html" class="footer__tab-bar-item">
-					<svg
-						class="footer__icon"
-						alt="Gå til forsiden"
-						width="24"
-						height="24"
-						viewBox="0 0 24 24"
-						fill="currentColor"
-						xmlns="http://www.w3.org/2000/svg">
-						<path
-							d="M13.0197 0.40082C12.443 -0.133607 11.5523 -0.133607 10.9803 0.40082L0.478456 10.1518C0.028377 10.5737 -0.121649 11.2253 0.10339 11.7972C0.328429 12.3692 0.876963 12.7489 1.49582 12.7489H2.24595V20.9997C2.24595 22.6546 3.5915 24 5.24648 24H18.7488C20.4038 24 21.7494 22.6546 21.7494 20.9997V12.7489H22.4995C23.1183 12.7489 23.6716 12.3692 23.8966 11.7972C24.1216 11.2253 23.9716 10.569 23.5215 10.1518L13.0197 0.40082ZM11.2475 14.9991H12.7478C13.9902 14.9991 14.9982 16.007 14.9982 17.2493V21.7498H8.99713V17.2493C8.99713 16.007 10.0051 14.9991 11.2475 14.9991Z" />
-					</svg>
+      <!-- Accordion sektion for Alkohol -->
+      <div class="accordion" id="alcoholAccordion">
+        <h2 class="accordion__header">
+          <i class="fas fa-chevron-down"></i> Alkohol
+        </h2>
+      </div>
+
+      <!-- Accordion sektion for Hjemløshed -->
+      <div class="accordion">
+        <h2 class="accordion__header">
+          <i class="fas fa-chevron-down"></i>
+          Hjemløshed
+        </h2>
+        <div class="accordion__content">
+          <!-- Indhold til hjemløshed kommer her -->
+        </div>
+      </div>
+
+      <!-- Accordion sektion for Stoffer -->
+      <div class="accordion">
+        <h2 class="accordion__header">
+          <i class="fas fa-chevron-down"></i>
+          Stoffer
+        </h2>
+        <div class="accordion__content">
+          <!-- Indhold til stoffer kommer her -->
+        </div>
+      </div>
+
+      <!-- Accordion sektion for Fattigdom -->
+      <div class="accordion">
+        <h2 class="accordion__header">
+          <i class="fas fa-chevron-down"></i>
+          Fattigdom
+        </h2>
+        <div class="accordion__content">
+          <!-- Indhold til fattigdom kommer her -->
+        </div>
+      </div>
+
+      <!-- Accordion sektion for Udsatte børn og unge -->
+      <div class="accordion">
+        <h2 class="accordion__header">
+          <i class="fas fa-chevron-down"></i>
+          Udsatte børn og unge
+        </h2>
+        <div class="accordion__content">
+          <!-- Indhold til udsatte børn og unge kommer her -->
+        </div>
+      </div>
+    </main>
+    <footer>
+      <nav
+        class="footer__tab-bar"
+        role="navigation"
+        aria-label="Main navigation">
+        <a href="index.html" class="footer__tab-bar-item">
+          <svg
+            class="footer__icon"
+            alt="Gå til forsiden"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M13.0197 0.40082C12.443 -0.133607 11.5523 -0.133607 10.9803 0.40082L0.478456 10.1518C0.028377 10.5737 -0.121649 11.2253 0.10339 11.7972C0.328429 12.3692 0.876963 12.7489 1.49582 12.7489H2.24595V20.9997C2.24595 22.6546 3.5915 24 5.24648 24H18.7488C20.4038 24 21.7494 22.6546 21.7494 20.9997V12.7489H22.4995C23.1183 12.7489 23.6716 12.3692 23.8966 11.7972C24.1216 11.2253 23.9716 10.569 23.5215 10.1518L13.0197 0.40082ZM11.2475 14.9991H12.7478C13.9902 14.9991 14.9982 16.007 14.9982 17.2493V21.7498H8.99713V17.2493C8.99713 16.007 10.0051 14.9991 11.2475 14.9991Z" />
+          </svg>
 
 					<span class="footer__tab-label">Hjem</span>
 				</a>
