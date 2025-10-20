@@ -267,26 +267,180 @@ input:focus {
 	outline-offset: -2px;
 }
 
-/*
-Hvis vi skal bruge pile:
-.arrow {
-  border: solid black;
-  border-width: 0 3px 3px 0;
-  display: inline-block;
-  padding: 3px;
+/******** Wardrobe *******/
+#product-wrapper,
+.main__product-wrapper {
+  margin-top: var(--spacing-s);
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-xs);
+  justify-content: center;
+  align-self: stretch;
 }
 
-.right {
-  transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
+.main__product-item {
+  display: flex;
+  position: relative;
+  width: 150px;
+  height: 150px;
+  aspect-ratio: 1/1;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--stroke-light-gray);
 }
 
-.left {
-  transform: rotate(135deg);
-  -webkit-transform: rotate(135deg);
+.main__product-item img {
+  width: 100%;
+  flex-shrink: 0;
+  align-self: center;
 }
 
-HTML Example:
-<p>Right arrow: <i class="arrow right"></i></p>
-<p>Left arrow: <i class="arrow left"></i></p>
-*/
+.main__heart-icon {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 32px;
+  height: 32px;
+  fill: none;
+
+  cursor: pointer;
+}
+
+.main__heart-icon--liked path {
+  stroke: red;
+  fill: red;
+}
+
+/******** Outfit View *******/
+.main__outfit-wrapper {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  padding: var(--spacing-m) 0;
+  min-height: 70vh;
+}
+
+.outfit__dressup-container {
+  position: relative;
+  width: 300px;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.outfit__avatar-base {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.outfit__clothing-slot {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.outfit__clothing-slot--overdele {
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 180px;
+  height: 180px;
+}
+
+.outfit__clothing-slot--underdele {
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 180px;
+  height: 180px;
+}
+
+.outfit__clothing-slot--sko {
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 160px;
+  height: 120px;
+}
+
+.outfit__clothing-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  pointer-events: none;
+}
+
+.outfit__arrow {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 2px solid var(--primary);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 3;
+  transition: all 0.2s ease;
+  color: var(--primary);
+}
+
+.outfit__arrow:hover {
+  background-color: var(--primary);
+  color: white;
+  transform: scale(1.1);
+}
+
+.outfit__arrow--left {
+  left: -50px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.outfit__arrow--right {
+  right: -50px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.outfit__arrow:hover.outfit__arrow--left {
+  transform: translateY(-50%) scale(1.1);
+}
+
+.outfit__arrow:hover.outfit__arrow--right {
+  transform: translateY(-50%) scale(1.1);
+}
+
+.outfit__counter {
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--fill-white);
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: var(--text-body-small-size);
+  color: var(--text-primary);
+  border: 1px solid var(--stroke-light-gray);
+  white-space: nowrap;
+  z-index: 3;
+}
+
+.outfit__placeholder {
+  font-size: var(--text-body-small-size);
+  color: var(--text-secondary);
+  text-align: center;
+  font-style: italic;
+  padding: 8px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 4px;
+  max-width: 150px;
+}
