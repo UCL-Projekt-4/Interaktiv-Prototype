@@ -1,15 +1,15 @@
 const products = [
   {
     id: 1,
-    category: "Overdel",
-    underCategory: "T-shirt",
+    category: "Overdele",
+    underCategory: "T-shirts og toppe",
     description: "Basic T-shirt",
     color: "Sort",
     image: "#",
   }, // image skal være "img/billedenavn"
   {
     id: 2,
-    category: "Underdel",
+    category: "Underdele",
     underCategory: "Bukser",
     description: "Basic Bukser",
     color: "Blå",
@@ -25,15 +25,15 @@ const products = [
   }, // image skal være "img/billedenavn"
   {
     id: 4,
-    category: "Overdel",
-    underCategory: "Bluse",
+    category: "Overdele",
+    underCategory: "Bluser",
     description: "Basic Bluse",
-    color: "Sort",
-    image: "#",
+    color: "Grøn",
+    image: "img/trøje.png",
   }, // image skal være "img/billedenavn"
   {
     id: 5,
-    category: "Underdel",
+    category: "Underdele",
     underCategory: "Shorts",
     description: "Basic Shorts",
     color: "Sort",
@@ -41,7 +41,7 @@ const products = [
   }, // image skal være "img/billedenavn"
   {
     id: 6,
-    category: "Underdel",
+    category: "Underdele",
     underCategory: "Nederdel",
     description: "Basic Nederdel",
     color: "Sort",
@@ -49,8 +49,8 @@ const products = [
   }, // image skal være "img/billedenavn"
   {
     id: 7,
-    category: "Overdel",
-    underCategory: "T-shirt",
+    category: "Overdele",
+    underCategory: "T-shirts og toppe",
     description: "Basic T-shirt",
     color: "Hvid",
     image: "#",

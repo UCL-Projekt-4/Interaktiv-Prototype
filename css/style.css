@@ -145,7 +145,7 @@ footer {
 }
 
 /******** Wardrobe *******/
-.main__clothing-wrapper {
+#product-wrapper {
   margin-top: var(--spacing-s);
   display: flex;
   flex-wrap: wrap;
@@ -154,7 +154,7 @@ footer {
   align-self: stretch;
 }
 
-.main__clothing-item {
+.main__product-item {
   display: flex;
   position: relative;
   width: 150px;
@@ -165,7 +165,7 @@ footer {
   border: 1px solid var(--stroke-light-gray);
 }
 
-.main__clothing-item img {
+.main__product-item img {
   width: 100%;
   flex-shrink: 0;
   align-self: center;

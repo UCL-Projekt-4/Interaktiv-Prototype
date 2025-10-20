@@ -26,7 +26,7 @@ export function getLikedProducts() {
 // Funktion til at oprette et clothing item element med hjerte
 export function createClothingItem(product) {
   const item = document.createElement("div");
-  item.className = "main__clothing-item";
+  item.className = "main__product-item";
   item.dataset.productId = product.id;
 
   const img = document.createElement("img");
