@@ -15,8 +15,8 @@ let currentView = "wardrobe"; // Kan være 'wardrobe' (viser alle likede items) 
 // Holder styr på hvilket produkt der vises for hver kategori i outfit view
 // Bruges til at huske positionen når man klikker på pilene
 let currentIndices = {
-  Overdel: 0, // Index for det aktuelle overdel (t-shirt, bluse, etc.)
-  Underdel: 0, // Index for den aktuelle underdel (bukser, nederdel, etc.)
+  Overdele: 0, // Index for det aktuelle overdel (t-shirt, bluse, etc.)
+  Underdele: 0, // Index for den aktuelle underdel (bukser, nederdel, etc.)
   Sko: 0, // Index for de aktuelle sko
 };
 
@@ -34,7 +34,7 @@ function createArrow(direction) {
   // Tilføj SVG ikon afhængigt af retning (venstre eller højre)
   arrow.innerHTML = `
     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M${ 
+      <path d="M${
         direction === "left" ? "15 18L9 12L15 6" : "9 6L15 12L9 18" // En forkortet måde at lave en if statement på. Her er det hvis den er left så bruger den det efterfølgende path data, hvis ikke så bruger den det andet
       }" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
     </svg>
@@ -49,7 +49,7 @@ function createArrow(direction) {
  */
 function showWardrobeView() {
   // Find de to container elementer
-  const wrapper = document.querySelector(".main__clothing-wrapper");
+  const wrapper = document.querySelector(".main__product-wrapper");
   const outfitWrapper = document.querySelector(".main__outfit-wrapper");
 
   // Vis wardrobe wrapper, skjul outfit wrapper
@@ -149,7 +149,7 @@ function updateCategoryDisplay(category, categoryProducts) {
  */
 function showOutfitView() {
   // Find de to container elementer
-  const wrapper = document.querySelector(".main__clothing-wrapper");
+  const wrapper = document.querySelector(".main__product-wrapper");
   const outfitWrapper = document.querySelector(".main__outfit-wrapper");
 
   console.log("showOutfitView called");
@@ -185,8 +185,8 @@ function showOutfitView() {
 
   // Opdel produkter i kategorier (Overdel, Underdel, Sko)
   const categories = {
-    Overdel: likedProducts.filter((p) => p.category === "Overdel"),
-    Underdel: likedProducts.filter((p) => p.category === "Underdel"),
+    Overdele: likedProducts.filter((p) => p.category === "Overdele"),
+    Underdele: likedProducts.filter((p) => p.category === "Underdele"),
     Sko: likedProducts.filter((p) => p.category === "Sko"),
   };
 
@@ -194,7 +194,7 @@ function showOutfitView() {
 
   // ========== OPRET SLOTS FOR HVER KATEGORI ==========
   // Gennemgå hver kategori (Overdel, Underdel, Sko) i rækkefølge
-  ["Overdel", "Underdel", "Sko"].forEach((category) => {
+  ["Overdele", "Underdele", "Sko"].forEach((category) => {
     // Opret en slot (position) for denne kategori
     const slot = document.createElement("div");
     slot.id = `outfit-slot-${category.toLowerCase()}`; // ID bruges til at finde elementet senere
