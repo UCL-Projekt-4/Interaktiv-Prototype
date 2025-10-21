@@ -25,3 +25,9 @@ function displayClothingOptions() {
     grid.appendChild(img);
   });
 }
+
+function selectClothing(item) {
+  localStorage.setItem("selectedType", item.type);
+  localStorage.setItem("selectedImage", item.src);
+  window.location.href = "avatar.html";
+}
