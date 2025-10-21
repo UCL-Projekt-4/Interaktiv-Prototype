@@ -16,7 +16,7 @@ function displayClothingOptions() {
   clothingItems.forEach(item => {
     let img = document.createElement("img");
     img.src = item.src;
-    img.alt = `${item.type}`;
+    img.alt = item.type;
     img.className = "clothing";
     img.addEventListener("click", () => {
       selectClothing(item);
@@ -36,6 +36,27 @@ function showClothingOnAvatar() {
   const shirt = document.getElementById("shirt");
   const pants = document.getElementById("pants");
   if (shirt == null || pants == null) {
-  return; }
+  return; 
 }
 
+  let selectedType = localStorage.getItem("selectedType");
+  let selectedImage = localStorage.getItem("selectedImage");
+
+  let savedShirt = localStorage.getItem("currentShirt") || defaultOutfit.shirt;
+  let savedPants = localStorage.getItem("currentPants") || defaultOutfit.pants;
+
+  if (selectedType === "shirt") savedShirt = selectedImage;
+  if (selectedType === "pants") savedPants = selectedImage;
+
+  shirt.src = savedShirt;
+  pants.src = savedPants;
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  if (document.getElementById("clothingGrid")) {
+    displayClothingOptions();
+  }
+  if (document.getElementById("shirt")) {
+    showClothingOnAvatar();
+  }
+});
