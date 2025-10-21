@@ -31,3 +31,11 @@ function selectClothing(item) {
   localStorage.setItem("selectedImage", item.src);
   window.location.href = "avatar.html";
 }
+
+function showClothingOnAvatar() {
+  const shirt = document.getElementById("shirt");
+  const pants = document.getElementById("pants");
+  if (shirt == null || pants == null) {
+  return; }
+}
+
