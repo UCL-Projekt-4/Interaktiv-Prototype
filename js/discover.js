@@ -29,7 +29,7 @@ const categories = [
       },
       {
         id: 4,
-        name: "Skjorter",
+        name: "Jakker",
       },
       {
         id: 5,
