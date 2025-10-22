@@ -2,10 +2,11 @@ const products = [
   {
     id: 1,
     category: "Overdele",
-    underCategory: "T-shirts og toppe",
-    description: "Basic T-shirt",
+    underCategory: "Trøjer og Cardigans",
+    description: "Adidas Trøje",
     color: "Sort",
-    image: "#",
+    image: "img/toj/adidasJakke.webp",
+    avatarImg: img / avatartoj / adidasJakkeMedArme.webp,
   }, // image skal være "img/billedenavn"
   {
     id: 2,
@@ -55,6 +56,8 @@ const products = [
     color: "Hvid",
     image: "#",
   }, // image skal være "img/billedenavn"
+  {
+    id: 8,
+  },
 ];
-
 export default products;
