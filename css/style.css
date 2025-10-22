@@ -457,6 +457,7 @@ input:focus {
 }
 .main__category-btn:hover {
   background-color: var(--secondary);
+}
 /******** About us *******/
 
 .main-content--about-us {
