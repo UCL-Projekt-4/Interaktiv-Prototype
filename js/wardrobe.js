@@ -284,3 +284,6 @@ document.addEventListener("DOMContentLoaded", function () {
   // Vis wardrobe view som standard når siden loader
   showWardrobeView();
 });
+
+
+// CECILIEs del
