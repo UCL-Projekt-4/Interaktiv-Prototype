@@ -29,7 +29,7 @@ const categories = [
       },
       {
         id: 4,
-        name: "Skjorter",
+        name: "Jakker",
       },
       {
         id: 5,
@@ -96,7 +96,16 @@ const categories = [
   {
     id: 7,
     category: "Sko",
-    subCategories: [],
+    subCategories: [
+      {
+        id: 1,
+        name: "Vis alt",
+      },
+      {
+        id: 2,
+        name: "Ballerinasko",
+      },
+    ],
     description: "Alle skos produkter",
   },
 ];
