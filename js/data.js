@@ -20,10 +20,10 @@ const products = [
   {
     id: 3,
     category: "Sko",
-    underCategory: "Sko",
+    underCategory: "Ballerinasko",
     description: "Ballerinasko",
     color: "Rød",
-    image: "img/toj/ballerinasko.webp",
+    image: "img/toj/ballerinaSko.webp",
   }, // image skal være "img/billedenavn"
   {
     id: 4,
