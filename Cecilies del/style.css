@@ -1,0 +1,45 @@
+body {
+  text-align: center;
+  margin-top: 40px;
+  font-family: sans-serif;
+}
+
+.clothing-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.clothing {
+  width: 120px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+
+.container {
+  position: relative;
+  display: inline-block;
+}
+
+.avatar {
+  width: 200px;
+}
+
+/* adjust position so clothes fit avatar */
+.shirt {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 200px;
+  pointer-events: none;
+}
+
+.pants {
+  position: absolute;
+  top: 150px;
+  left: 0;
+  width: 200px;
+  pointer-events: none;
+}
