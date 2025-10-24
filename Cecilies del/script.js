@@ -3,15 +3,17 @@
 // Grundet misforståelser i gruppen er dette kodestykke lavet to gange, på to forskellige måder -- derfor vises dette stykke for sig som en lille prototype med eget HTML, CSS og JS. 
 
 let clothingItems = [ // arrayet indeholder tøjet med type og billede, som bruges senere. Hvis det var "rigtigt" skulle disse hentes fra data.js. Dette er altså derfor bare et lille udvalg for at vise at koden fungerer. 
-  { type: "shirt", src: "images/shirt.png" },
-  { type: "shirt", src: "images/shirt.png" },
-  { type: "pants", src: "images/pants.png" },
-  { type: "pants", src: "images/pants.png" }
+  { type: "shirt", src: "../img/toj/adidasTroje.webp" },
+  { type: "shirt", src: "../img/toj/cowboyJakke.webp" },
+  { type: "shirt", src: "../img/toj/sortTop.webp" },
+  { type: "pants", src: "../img/toj/ternetNederdel.webp" },
+  { type: "pants", src: "../img/toj/bruneBukser.webp" },
+  { type: "pants", src: "../img/toj/cowboyBukser.webp" },
 ];
 
 const defaultOutfit = { // denne funktion gør, at der altid er et default outfit på avataren. 
-  shirt: "images/default/default_shirt.png",
-  pants: "images/default/default_pants.png"
+  shirt: "../images/default/default_shirt.png",
+  pants: "../images/default/default_pants.png"
 };
 
 function displayClothingOptions() {
