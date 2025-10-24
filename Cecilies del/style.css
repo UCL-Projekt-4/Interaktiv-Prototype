@@ -38,8 +38,8 @@ body {
 
 .pants {
   position: absolute;
-  top: 150px;
+  top: 400px;
   left: 0;
-  width: 200px;
+  width: 300px;
   pointer-events: none;
 }

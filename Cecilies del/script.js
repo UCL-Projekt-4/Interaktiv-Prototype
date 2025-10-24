@@ -11,10 +11,10 @@ let clothingItems = [ // arrayet indeholder tøjet med type og billede, som brug
   { type: "pants", src: "../img/toj/cowboyBukser.webp" },
 ];
 
-/*const defaultOutfit = { // denne funktion gør, at der altid er et default outfit på avataren. 
+const defaultOutfit = { // denne funktion gør, at der altid er et default outfit på avataren. 
   shirt: "images/default/default_shirt.png",
   pants: "images/default/default_pants.png"
-};*/
+};
 
 function displayClothingOptions() {
   const grid = document.getElementById("clothingGrid"); // der tages fat i elementet (en div), der har id'et "clothingGrid". Det er her tøjstykkerne vises og kan trykkes på. 
@@ -50,15 +50,15 @@ function showClothingOnAvatar() {
   let selectedImage = localStorage.getItem("selectedImage");
 
   // hent det tøj, der allerede er vist på avataren, eller brug default hvis der ikke er gemt noget (chatGPT har lavet denne forklaring (har bare sat de to nedenstående linjer ind og bedst den lave en note))
-  let savedShirt = localStorage.getItem("currentShirt") //|| defaultOutfit.shirt; // eksisterende bluse eller default
-  let savedPants = localStorage.getItem("currentPants")//|| defaultOutfit.pants; // eksisterende bukser eller default
+  let savedShirt = localStorage.getItem("currentShirt") || defaultOutfit.shirt; // eksisterende bluse eller default
+  let savedPants = localStorage.getItem("currentPants") || defaultOutfit.pants; // eksisterende bukser eller default
 
   // her opdateres *kun* det stykke tøj, der er valgt
   if (selectedType === "shirt") savedShirt = selectedImage; // hvis der er valgt en bluse, opdateres blusen
   if (selectedType === "pants") savedPants = selectedImage; // hvis der er valgt bukser, opdateres bukser
 
-  shirt.src = savedShirt || " ";
-  pants.src = savedPants || " ";
+  shirt.src = savedShirt;
+  pants.src = savedPants;
 }
 
 document.addEventListener("DOMContentLoaded", () => { // venter med at gøre noget, indtil alt contentet i DOM'en er loaded
