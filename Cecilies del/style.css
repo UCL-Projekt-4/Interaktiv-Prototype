@@ -30,9 +30,9 @@ body {
 /* adjust position so clothes fit avatar */
 .shirt {
   position: absolute;
-  top: 60px;
+  top: 200px;
   left: 0;
-  width: 200px;
+  width: 350px;
   pointer-events: none;
 }
 
