@@ -75,26 +75,21 @@ const categories = [
     subCategories: [],
     description: "Alle træningstøjs produkter",
   },
+  
   {
     id: 4,
-    category: "Jakker og Frakker",
-    subCategories: [],
-    description: "Alle jakker og frakkers produkter",
-  },
-  {
-    id: 5,
     category: "Kjoler",
     subCategories: [],
     description: "Alle kjolers produkter",
   },
   {
-    id: 6,
+    id: 5,
     category: "Playsuits og Jumpsuits",
     subCategories: [],
     description: "Alle playsuits og jumpsuits produkter",
   },
   {
-    id: 7,
+    id: 6,
     category: "Sko",
     subCategories: [
       {

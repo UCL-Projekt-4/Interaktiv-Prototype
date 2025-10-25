@@ -267,10 +267,16 @@ input:focus {
   justify-content: center;
   align-items: center;
   border: 1px solid var(--stroke-light-gray);
+  /* Ensure content doesn't spill outside the square */
+  overflow: hidden;
 }
 
 .main__product-item img {
+  /* Fill the square without distortion */
   width: 100%;
+  height: 100%;
+  object-fit: contain; /* Use 'cover' if you prefer crop-to-fill */
+  object-position: center;
   flex-shrink: 0;
   align-self: center;
 }
@@ -327,28 +333,35 @@ input:focus {
   z-index: 2;
 }
 
+/* Justeret for bedre pasform på avatar */
 .outfit__clothing-slot--overdele {
-  top: 20%;
+  top: 13%; /* placering relativt til avatarens top */
   left: 50%;
   transform: translateX(-50%);
-  width: 180px;
-  height: 180px;
+  width: 210px; /* øg bredden for reel skalering af tøjet */
+  height: 210px; /* hold nær kvadrat for ens skalering */
+}
+
+/* Finjuster billedets placering i slotten */
+.outfit__clothing-slot--overdele .outfit__clothing-image {
+  object-position: center top;
+  padding-top: 4px;
 }
 
 .outfit__clothing-slot--underdele {
-  top: 50%;
-  left: 50%;
+  top: 39%;
+  left: 51%;
   transform: translateX(-50%);
-  width: 180px;
-  height: 180px;
+  width: 380px;
+  height: 380px;
 }
 
 .outfit__clothing-slot--sko {
-  bottom: 5%;
+  bottom: 1%;
   left: 50%;
   transform: translateX(-50%);
-  width: 160px;
-  height: 120px;
+  width: 100px;
+  height: 10px;
 }
 
 .outfit__clothing-image {
@@ -460,16 +473,26 @@ input:focus {
 }
 /******** About us *******/
 
-.main-content--about-us {
+.main-text-content {
   background-color: var(--primary);
   color: var(--text-invers-primary);
   height: 100%;
+  padding: 0 16px;
+  padding-bottom: 100px;
+  
 }
 
 .accordion__list {
   padding-left: 24px;
   list-style-position: inside;
+  line-height: 1.2;
+  margin-bottom: 1.2rem;
 }
+p+ul{
+  margin-top: 0.7rem;
+}
+li+li {
+  margin-top: 0.7rem;}
 
 .accordion__content {
   padding-left: 40px;

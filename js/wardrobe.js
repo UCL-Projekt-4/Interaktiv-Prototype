@@ -110,9 +110,9 @@ function updateCategoryDisplay(category, categoryProducts) {
   // Ryd slot for alt tidligere indhold
   slot.innerHTML = "";
 
-  // Opret og tilføj billede af det aktuelle produkt
+  // Opret og tilføj billede af det aktuelle produkt med avatarIMG
   const img = document.createElement("img");
-  img.src = currentProduct.image;
+  img.src = currentProduct.avatarIMG;
   img.alt = currentProduct.description;
   img.className = "outfit__clothing-image";
   slot.appendChild(img);
@@ -169,7 +169,7 @@ function showOutfitView() {
 
   // Tilføj avatar som baggrundsbillede (z-index: 1, nederste lag)
   const avatarImg = document.createElement("img");
-  avatarImg.src = "img/avatarNoArms.svg"; // Avatar uden arme så tøjet passer bedre
+  avatarImg.src = "img/avatar/fullAvatar.svg"; // initial værdi – opdateres nedenfor ud fra wardrobe-indhold
   avatarImg.alt = "Avatar";
   avatarImg.className = "outfit__avatar-base";
   dressUpContainer.appendChild(avatarImg);
@@ -191,6 +191,25 @@ function showOutfitView() {
   };
 
   console.log("Categories:", categories);
+
+  // ========== VÆLG AVATAR VARIANT UD FRA INHOLDET I WARDROBE ==========
+  // Brug forskellige SVG'er afhængigt af om der findes overdele/underdele
+  const hasTop = categories.Overdele.length > 0;
+  const hasBottom = categories.Underdele.length > 0;
+
+  let avatarSrc = "img/avatar/fullAvatar.svg";
+  if (hasTop && hasBottom) {
+    avatarSrc = "img/avatar/avatarNoArmsNoLegs.svg";
+    avatarImg.alt = "Avatar uden arme og ben";
+  } else if (hasTop) {
+    avatarSrc = "img/avatar/avatarNoArms.svg";
+    avatarImg.alt = "Avatar uden arme";
+  } else if (hasBottom) {
+    avatarSrc = "img/avatar/avatarNoLegs.svg";
+    avatarImg.alt = "Avatar uden ben";
+  }
+  // Opdater avatar billedet
+  avatarImg.src = avatarSrc;
 
   // ========== OPRET SLOTS FOR HVER KATEGORI ==========
   // Gennemgå hver kategori (Overdel, Underdel, Sko) i rækkefølge
@@ -284,6 +303,3 @@ document.addEventListener("DOMContentLoaded", function () {
   // Vis wardrobe view som standard når siden loader
   showWardrobeView();
 });
-
-
-// CECILIEs del
