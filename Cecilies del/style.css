@@ -34,6 +34,8 @@ body {
   left: 0;
   width: 350px;
   pointer-events: none;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .pants {
@@ -42,4 +44,6 @@ body {
   left: 0;
   width: 300px;
   pointer-events: none;
+  left: 50%;
+  transform: translateX(-50%);
 }
