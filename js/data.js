@@ -5,7 +5,7 @@ const products = [
     underCategory: "Trøjer og cardigans",
     description: "Adidas Trøje",
     color: "Sort",
-    image: "img/toj/adidasTrøje.webp",
+    image: "img/toj/adidasTroje.webp",
     avatarIMG: "img/avatartoj/adidasTrojeMedArme.webp",
   }, // image skal være "img/billedenavn"
   {
