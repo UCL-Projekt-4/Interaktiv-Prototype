@@ -1,0 +1,45 @@
+body {
+  text-align: center;
+}
+
+.clothing-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: nowrap;
+  object-fit: contain;
+}
+
+.clothing {
+  width: 120px;
+  cursor: pointer;
+}
+
+.container {
+  position: relative;
+  display: inline-block;
+}
+
+.avatar {
+  width: 170px;
+}
+
+.shirt {
+  position: absolute;
+  top: 150px;
+  left: 0;
+  width: 300px;
+  pointer-events: none;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.pants {
+  position: absolute;
+  top: 350px;
+  left: 0;
+  width: 260px;
+  pointer-events: none;
+  left: 50%;
+  transform: translateX(-50%);
+}
