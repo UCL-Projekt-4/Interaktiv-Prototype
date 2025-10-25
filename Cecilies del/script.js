@@ -12,8 +12,8 @@ let clothingItems = [ // arrayet indeholder tøjet med type og billede, som brug
 ];
 
 const defaultOutfit = { // denne funktion gør, at der altid er et default outfit på avataren. 
-  shirt: "images/default/default_shirt.png",
-  pants: "images/default/default_pants.png"
+  shirt: "images/transparent.png",
+  pants: "images/transparent.png"
 };
 
 function displayClothingOptions() {
