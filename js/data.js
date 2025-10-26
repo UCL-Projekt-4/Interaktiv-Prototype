@@ -14,8 +14,8 @@ const products = [
     underCategory: "Bukser",
     description: "Cowboybukser",
     color: "Blå",
-    image: "img/toj/cowboybukser.webp",
-    avatarIMG: "img/avatartoj/cowboybukserMedBen.webp",
+    image: "img/toj/cowboyBukser.webp",
+    avatarIMG: "img/avatartoj/cowboyBukserMedBen.webp",
   }, // image skal være "img/billedenavn"
   {
     id: 3,
