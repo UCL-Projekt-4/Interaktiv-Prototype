@@ -14,52 +14,53 @@ const loginForm = document.getElementById("loginForm"); // Hent login-formular
 // Hvert element i arrayet er et objekt, der samler en email med den tilhørende adgangskode.
 // Dette bruges senere til at tjekke login.
 const users = [
-	{ email: "hey@ucl.dk", password: "goddag" },
-	{ email: "genbrug@ucl.dk", password: "detteerbareenkode" },
+  { email: "hey@ucl.dk", password: "goddag" },
+  { email: "genbrug@ucl.dk", password: "detteerbareenkode" },
+  { email: "123@456.dk", password: "789" },
 ];
 
 // -- Funktioner til at åbne og lukke loginmodal -- //
 // Her laver jeg to funktioner: én til at åbne modalen og én til at lukke den.
 function openModal() {
-	loginModal.classList.add("open"); // Tilføj 'open' klasse for at vise modal
-	document.body.style.overflow = "hidden"; // Forhindr baggrund i at scrolle
-	document.getElementById("email").focus(); // Sæt fokus på email-feltet, når modalen åbnes
+  loginModal.classList.add("open"); // Tilføj 'open' klasse for at vise modal
+  document.body.style.overflow = "hidden"; // Forhindr baggrund i at scrolle
+  document.getElementById("email").focus(); // Sæt fokus på email-feltet, når modalen åbnes
 }
 
 function closeModal() {
-	loginModal.classList.remove("open"); // Fjern 'open' klasse for at skjule modal
-	document.body.style.overflow = "auto"; // Tillad baggrund at scrolle igen
-	loginBtn.focus(); // Sæt fokus tilbage på login-knappen, når modalen lukkes
+  loginModal.classList.remove("open"); // Fjern 'open' klasse for at skjule modal
+  document.body.style.overflow = "auto"; // Tillad baggrund at scrolle igen
+  loginBtn.focus(); // Sæt fokus tilbage på login-knappen, når modalen lukkes
 }
 
 // ----------- Funktion til login ----------- //
 // Her tjekker jeg, om email og password matcher en bruger i arrayet.
 
 function login(event) {
-	event.preventDefault(); // Forhindre formular i genindlæse siden.
+  event.preventDefault(); // Forhindre formular i genindlæse siden.
 
-	const email = document.getElementById("email").value; // Hent indtastet email.
-	const password = document.getElementById("password").value; // Hent indtastet password.
+  const email = document.getElementById("email").value; // Hent indtastet email.
+  const password = document.getElementById("password").value; // Hent indtastet password.
 
-	let isValid = false; // Starter med at antage, at login ikke er korrekt.
+  let isValid = false; // Starter med at antage, at login ikke er korrekt.
 
-	//Loop igennem alle brugere for at tjekke email og password.
-	for (let i = 0; i < users.length; i++) {
-		if (email === users[i].email && password === users[i].password) {
-			isValid = true; // Sæt isValid til true, hvis der er et match.
-			break; // Stop loopet, da vi har fundet en match.
-		}
-	}
+  //Loop igennem alle brugere for at tjekke email og password.
+  for (let i = 0; i < users.length; i++) {
+    if (email === users[i].email && password === users[i].password) {
+      isValid = true; // Sæt isValid til true, hvis der er et match.
+      break; // Stop loopet, da vi har fundet en match.
+    }
+  }
 
-	// Hvis login er korrekt, luk modalen og vis en velkomstbesked.
-	if (isValid) {
-		closeModal(); // Luk modalen.
-		alert("Velkommen!"); // Vis velkomstbesked.
-		loginForm.reset(); // Nulstil formularen.
-		// Hvis login ikke er korrekt, vis en fejlbesked.
-	} else {
-		alert("Forkert email eller password. Prøv igen."); // Vis fejlbesked.
-	}
+  // Hvis login er korrekt, luk modalen og vis en velkomstbesked.
+  if (isValid) {
+    closeModal(); // Luk modalen.
+    alert("Velkommen!"); // Vis velkomstbesked.
+    loginForm.reset(); // Nulstil formularen.
+    // Hvis login ikke er korrekt, vis en fejlbesked.
+  } else {
+    alert("Forkert email eller password. Prøv igen."); // Vis fejlbesked.
+  }
 }
 
 // ------- Event listeners ------- //
